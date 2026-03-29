@@ -31,7 +31,7 @@ function App() {
   }
   function send() {
     setStatus(true);
-    axios.post("https://bulk-mail-sender-2-s2z6.onrender.com/sendmail", { msg: msg,emaillist:emaillist }).then((res) => {
+    axios.post("https://bulk-mail-sender-pm6p-lx8a1xl80-jayarajs-projects-1a8db617.vercel.app/", { msg: msg,emaillist:emaillist }).then((res) => {
       if (res.data === true) {
         alert("email sent successfully");
         setStatus(false);
