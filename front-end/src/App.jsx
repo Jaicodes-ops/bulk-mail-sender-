@@ -31,7 +31,7 @@ function App() {
   }
   function send() {
     setStatus(true);
-    axios.post("http://localhost:5000/sendmail", { msg: msg,emaillist:emaillist }).then((res) => {
+    axios.post("https://bulk-mail-sender-pm6p.vercel.app/", { msg: msg,emaillist:emaillist }).then((res) => {
       if (res.data === true) {
         alert("email sent successfully");
         setStatus(false);
